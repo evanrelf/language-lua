@@ -38,6 +38,8 @@ x <$> y | isEmpty y = x
 type Precedence = Int
 
 class LPretty a where
+    {-# MINIMAL pprint | pprint' #-}
+
     pprint :: a -> Doc
     pprint = pprint' 0
 
