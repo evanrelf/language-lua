@@ -6,11 +6,11 @@
 
 -- | Lua pretty-printer.
 module Language.Lua.PrettyPrinter
-  ( pprint
+  ( LPretty (..)
+  , Doc
   , renderPretty
   , displayS
   , displayIO
-  , LPretty
   ) where
 
 #if MIN_VERSION_base(4,11,0)
